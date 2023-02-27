@@ -1,0 +1,113 @@
+:root
+{ 
+	--pomodoro: #005689;
+	--shortBreak: #75028a;
+	--longBreak: #24670b;
+}
+
+body
+{
+	background-color: var(--pomodoro);
+	font-family: 'Lato', sans-serif;
+}
+	
+h1
+{
+	color: #fff;
+	text-align: center;
+	font-size: 26px;
+	margin-top: 70px;
+	letter-spacing: 0.5px;
+	font-weight: 600;
+}
+
+#loadingBar
+{
+	height: 0.2px;
+	width: 600px;
+	background-color: rgba(0, 0, 0, 0.2);
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+#loadingBarProgress
+{
+	height: 2px;
+	width: 0px;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 2px;
+}
+
+#container
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 95px;
+	width: 500px;
+	height: 300px;
+	background-color: var(--pomodoro);
+	filter: brightness(125%);
+	border-radius: 2px;
+	text-align: center;
+}
+
+#containerHeader
+{
+	width: 372px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+button 
+{
+	border: none;
+	border-radius: 2px;
+}
+
+.headButton
+{
+	width: 124px;
+	height: 32px;
+	float: left;
+	font-size: 17px;
+	color: #fff;
+	background-color: inherit;
+	padding: 5px 12px;
+	margin-top: 15px;
+}
+
+button:hover
+{
+	cursor: pointer;
+}
+.active 
+{
+	background-color: var(--pomodoro);
+	filter: brightness(80%);
+}
+
+#timer
+{
+	clear: both;
+	margin: auto;
+	font-size: 100px;
+	width: 250px;
+	height: 120px;
+	padding: 30px;
+}
+
+#start_stop
+{
+	width: 140px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 25px;
+	letter-spacing: 0.2px;
+	color: var(--pomodoro);
+	font-weight: 550;
+}
